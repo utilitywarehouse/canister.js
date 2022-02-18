@@ -30,12 +30,12 @@
   "homepage": "https://github.com/utilitywarehouse/canister.js#readme",
   "dependencies": {
     "dependency-graph": "^0.5.0",
-    "js-yaml": "^3.7.0",
+    "js-yaml": "^4.1.0",
     "lodash.filter": "^4.6.0",
     "lodash.get": "^4.4.2",
     "lodash.map": "^4.6.0",
     "lodash.mapvalues": "^4.6.0",
-    "merge": "^1.2.0",
+    "merge": "^2.1.1",
     "nyc": "^15.1.0",
     "resolve": "^1.2.0"
   },

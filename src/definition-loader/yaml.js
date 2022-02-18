@@ -15,7 +15,7 @@ module.exports = class YamlLoader {
 	fromFile(filePath) {
 		try {
 			const file = fs.readFileSync(filePath);
-			this.merge(yaml.safeLoad(file, {filename: filePath}));
+			this.merge(yaml.load(file, {filename: filePath}));
 		} catch (err) {
 			const error = new Error(`Error while parsing YAML file: ${err.message}`);
 			error.previous = err;
@@ -25,7 +25,7 @@ module.exports = class YamlLoader {
 
 	fromString(string) {
 		try {
-			this.merge(yaml.safeLoad(string));
+			this.merge(yaml.load(string));
 		} catch (err) {
 			const error = new Error(`Error while parsing YAML string: ${err.message}`);
 			error.previous = err;
