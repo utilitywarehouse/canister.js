@@ -1,9 +1,10 @@
 install:
 	yarn install
 
+.PHONY: coverage
 coverage:
 	rm -rf coverage
-	./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -r tests/.bootstrap.js 'tests/spec/**/*.spec.js' 'tests/**/test.js'
+	./node_modules/.bin/nyc yarn test
 
 test: test-spec test-component
 
