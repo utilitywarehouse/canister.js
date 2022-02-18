@@ -1,9 +1,6 @@
 install:
 	yarn install
 
-coveralls-report:
-	cat ./coverage/lcov.info | ./node_modules/.bin/coveralls
-
 coverage:
 	rm -rf coverage
 	./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -r tests/.bootstrap.js 'tests/spec/**/*.spec.js' 'tests/**/test.js'
