@@ -1,7 +1,7 @@
 const Builder = require('./../../src/builder');
 const Container = require('./../../src/container');
 const Definition = require('./../../src/definition');
-const uuid = require('uuid');
+const { v1: uuidv1 } = require('uuid');
 
 const functionModule = {
 
@@ -9,7 +9,7 @@ const functionModule = {
 
 const testClassModule = {
 	TestClass: class TestClass {
-		constructor(...args) { this.args = args; this.id = uuid.v1(); this.vals = {}};
+		constructor(...args) { this.args = args; this.id = uuidv1(); this.vals = {}};
 		setValue(key, val) { this.vals[key] = val;}
 	},
 	prop: 1

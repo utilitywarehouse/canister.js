@@ -1,9 +1,6 @@
 install:
 	yarn install
 
-lint:
-	./node_modules/.bin/xo 'src/**/*.js'
-
 coveralls-report:
 	cat ./coverage/lcov.info | ./node_modules/.bin/coveralls
 
