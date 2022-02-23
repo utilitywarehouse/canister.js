@@ -29,18 +29,18 @@ const canister = function canister(configPath, root) {
 		},
 		env: (prefix) => {
 			envLoader.load(prefix);
-		}
-	}
-}
+		},
+	};
+};
 
-canister.Definition = require('./src/definition');
-canister.Builder = require('./src/builder');
-canister.Parser = require('./src/parser');
-canister.ModuleLoader = require('./src/loader');
+canister.Definition = require("./src/definition");
+canister.Builder = require("./src/builder");
+canister.Parser = require("./src/parser");
+canister.ModuleLoader = require("./src/loader");
 canister.definitionLoader = {
-	YAML: require('./src/definition-loader/yaml'),
-	Environment: require('./src/definition-loader/env'),
-	Value: require('./src/definition-loader/value')
+	YAML: require("./src/definition-loader/yaml"),
+	Environment: require("./src/definition-loader/env"),
+	Value: require("./src/definition-loader/value"),
 };
 
 module.exports = canister;

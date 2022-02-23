@@ -15,7 +15,6 @@ module.exports = class Loader {
 	}
 
 	loadModule(module) {
-		// eslint-disable-next-line import/no-dynamic-require
 		return require(this.path(module));
 	}
 };
