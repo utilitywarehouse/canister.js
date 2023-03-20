@@ -1,6 +1,6 @@
 {
   "name": "@utilitywarehouse/canister.js",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A nodejs Dependency Injection Container implementation.",
   "main": "index.js",
   "directories": {
