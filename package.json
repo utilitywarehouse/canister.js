@@ -1,6 +1,6 @@
 {
   "name": "@utilitywarehouse/canister.js",
-  "version": "2.0.32",
+  "version": "2.1.0",
   "description": "A nodejs Dependency Injection Container implementation.",
   "main": "index.js",
   "directories": {
@@ -36,7 +36,6 @@
     "lodash.map": "^4.6.0",
     "lodash.mapvalues": "^4.6.0",
     "merge": "^2.1.1",
-    "nyc": "^15.1.0",
     "resolve": "^1.2.0"
   },
   "devDependencies": {

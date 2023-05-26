@@ -1,11 +1,6 @@
 install:
 	yarn install
 
-.PHONY: coverage
-coverage:
-	rm -rf coverage
-	./node_modules/.bin/nyc yarn test
-
 lint:
 	./node_modules/.bin/eslint --fix . && ./node_modules/.bin/prettier --write './*.js'
 
